@@ -1,24 +1,17 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-*{
-  font-family: Outfit,sans-serif;
-  
-}
 
 
-:root {
+@theme {
   /* Colors */
-  --light-hover: #fcf4ff;
-  --dark-hover: #2a004a;
-  --dark-mode: #24044C;
-  --irides1: #FFF9EC;
-  --irides2: #FEECFB;
-  --irides3: #DEFEFB;
-  --irides4: #F5EEFF;
-  --irides5: #DFBCFF;
+  --color-light-hover: #fcf4ff;
+  --color-dark-hover: #2a004a;
+  --color-darktheme: #24044C;
+  --color-irides1: #FFF9EC;
+  --color-irides2: #FEECFB;
+  --color-irides3: #DEFEFB;
+  --color-irides4: #F5EEFF;
+  --color-irides5: #DFBCFF;
+
 
   /* Font families */
   --font-outfit: 'Outfit', sans-serif;
@@ -27,25 +20,8 @@
 }
 
 
-/* Utility classes for colors */
-.bg-light-hover { background-color: var(--light-hover); }
-.bg-dark-hover { background-color: var(--dark-hover); }
-.bg-dark-mode { background-color: var(--dark-mode); }
-.bg-irides1 { background-color: var(--irides1); }
-.bg-irides2 { background-color: var(--irides2); }
-.bg-irides3 { background-color: var(--irides3); }
-.bg-irides4 { background-color: var(--irides4); }
-.bg-irides5 { background-color: var(--irides5); }
+*{
+  font-family: Outfit,sans-serif;
+  
+}
 
-.text-light-hover { color: var(--light-hover); }
-.text-dark-hover { color: var(--dark-hover); }
-.text-dark-mode { color: var(--dark-mode); }
-.text-irides1 { color: var(--irides1); }
-.text-irides2 { color: var(--irides2); }
-.text-irides3 { color: var(--irides3); }
-.text-irides4 { color: var(--irides4); }
-.text-irides5 { color: var(--irides5); }
-
-/* Font utility classes */
-.font-outfit { font-family: var(--font-outfit); }
-.font-ovo { font-family: var(--font-ovo); }
