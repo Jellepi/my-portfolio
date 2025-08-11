@@ -3,8 +3,8 @@
 
 @theme {
   /* Colors */
-  --color-light-hover: #fcf4ff;
-  --color-dark-hover: #2a004a;
+  --color-lightHover: #fcf4ff;
+  --color-darkHover: #2a004A;
   --color-darktheme: #24044C;
   --color-irides1: #FFF9EC;
   --color-irides2: #FEECFB;
@@ -12,12 +12,16 @@
   --color-irides4: #F5EEFF;
   --color-irides5: #DFBCFF;
 
-
   /* Font families */
   --font-outfit: 'Outfit', sans-serif;
   --font-ovo: 'Ovo', serif;
 
+  /*Box Shadows*/
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white : 4px 4px 0 #fff;
+  
 }
+
 
 
 *{

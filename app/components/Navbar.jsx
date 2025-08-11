@@ -1,10 +1,10 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { assets } from '@/assests/assets';
 
-
-
 const Navbar = () => {
+
+  const [isScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
   const openMenu = ()=> {
     sideMenuRef.current.style.transform = 'translateX(-16rem)'
@@ -14,13 +14,24 @@ const Navbar = () => {
     sideMenuRef.current.style.transform = 'translateX(16rem)'
   }
 
+  useEffect(() => {
+    window.addEventListener('scroll', ()=>{
+      if(scrollY > 50 ){
+        setIsScroll(true)
+      }else{
+        setIsScroll(false)
+      }
+    })
+  },[])
+
   return (
     <>
     <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
       <Image src={assets.header_bg_color} alt='' className='w-full' />
     </div>
-      <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
-      flex items-center justify-between z-50'>
+
+      <nav className= {`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
+      flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm" : "" } `}>
         <a href="#">
           <Image src={assets.logo} className='w-28 cursor-pointer mr-14' alt='logo'/>
         </a>
