@@ -26,10 +26,10 @@ const Navbar = () => {
         </a>
 
         <ul className='hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 text-xl'>
-          <li><a className='font-Outfit' href="#top">Home</a></li>
-          <li><a className='font-Outfit' href="#about">About me</a></li>
-          <li><a className='font-Outfit' href="#education">Education</a></li>
-          <li><a className='font-Outfit' href="#work">My Work</a></li>
+          <li><a className='font-outfit' href="#top">Home</a></li>
+          <li><a className='font-outfit' href="#about">About me</a></li>
+          <li><a className='font-outfit' href="#education">Education</a></li>
+          <li><a className='font-outfit' href="#work">My Work</a></li>
         </ul>
 
         <div className='flex items-center gap-4'>
@@ -42,15 +42,15 @@ const Navbar = () => {
 
         {/*-- Mobile Menu --*/}
 
-        <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-purple-50 transition duration-500'>
+        <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-dark-hover transition duration-500'>
           <div className='absolute right-6 top-6' onClick={closeMenu} >
             <Image src={assets.close_black} alt='' className='w-5 cursor-pointer'/>
           </div>
 
-          <li><a className='font-Outfit' onClick={closeMenu} href="#top">Home</a></li>
-          <li><a className='font-Outfit' onClick={closeMenu} href="#about">About me</a></li>
-          <li><a className='font-Outfit' onClick={closeMenu} href="#education">Education</a></li>
-          <li><a className='font-Outfit' onClick={closeMenu} href="#work">My Work</a></li>
+          <li><a className='font-outfit' onClick={closeMenu} href="#top">Home</a></li>
+          <li><a className='font-outfit' onClick={closeMenu} href="#about">About me</a></li>
+          <li><a className='font-outfit' onClick={closeMenu} href="#education">Education</a></li>
+          <li><a className='font-outfit' onClick={closeMenu} href="#work">My Work</a></li>
         </ul>
       </nav>
     </>

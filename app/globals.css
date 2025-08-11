@@ -14,11 +14,11 @@
   --light-hover: #fcf4ff;
   --dark-hover: #2a004a;
   --dark-mode: #24044C;
-  --irides-1: #FFF9EC;
-  --irides-2: #FEECFB;
-  --irides-3: #DEFEFB;
-  --irides-4: #F5EEFF;
-  --irides-5: #DFBCFF;
+  --irides1: #FFF9EC;
+  --irides2: #FEECFB;
+  --irides3: #DEFEFB;
+  --irides4: #F5EEFF;
+  --irides5: #DFBCFF;
 
   /* Font families */
   --font-outfit: 'Outfit', sans-serif;
@@ -31,20 +31,20 @@
 .bg-light-hover { background-color: var(--light-hover); }
 .bg-dark-hover { background-color: var(--dark-hover); }
 .bg-dark-mode { background-color: var(--dark-mode); }
-.bg-irides-1 { background-color: var(--irides-1); }
-.bg-irides-2 { background-color: var(--irides-2); }
-.bg-irides-3 { background-color: var(--irides-3); }
-.bg-irides-4 { background-color: var(--irides-4); }
-.bg-irides-5 { background-color: var(--irides-5); }
+.bg-irides1 { background-color: var(--irides1); }
+.bg-irides2 { background-color: var(--irides2); }
+.bg-irides3 { background-color: var(--irides3); }
+.bg-irides4 { background-color: var(--irides4); }
+.bg-irides5 { background-color: var(--irides5); }
 
 .text-light-hover { color: var(--light-hover); }
 .text-dark-hover { color: var(--dark-hover); }
 .text-dark-mode { color: var(--dark-mode); }
-.text-irides-1 { color: var(--irides-1); }
-.text-irides-2 { color: var(--irides-2); }
-.text-irides-3 { color: var(--irides-3); }
-.text-irides-4 { color: var(--irides-4); }
-.text-irides-5 { color: var(--irides-5); }
+.text-irides1 { color: var(--irides1); }
+.text-irides2 { color: var(--irides2); }
+.text-irides3 { color: var(--irides3); }
+.text-irides4 { color: var(--irides4); }
+.text-irides5 { color: var(--irides5); }
 
 /* Font utility classes */
 .font-outfit { font-family: var(--font-outfit); }
