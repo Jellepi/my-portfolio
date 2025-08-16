@@ -8,8 +8,8 @@ const Hero = () => {
             <div>
                 <Image src={assets.profile_img} alt="" className="rounded-full w-32"/>
             </div>
-             <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
-                Hi! I'm Jella Pintor! <Image src={assets.hand_icon} alt="" className="w-6"/> </h3>
+             <h2 className="flex items-end gap-2 text-xl md:text-3xl mb-3 font-Ovo">
+                Hi! I'm Jella Pintor! <Image src={assets.hand_icon} alt="" className="w-6"/> </h2>
             <h1 className="text-3xl sm:text-6xl lg-text-[66px]">
                 Backend Developer based in the Philippines.
             </h1>

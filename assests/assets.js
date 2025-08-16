@@ -41,6 +41,7 @@ import visualstudio from './visualstudio.png'
 import postgre from './postgre.png'
 import python from './python.png'
 
+
 export const assets = {
     csharp,
     dynamics,
@@ -83,38 +84,39 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
+        title: 'Developer Intern',
         description: 'Web Design',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
+        title: 'HaraBuzz System',
         description: 'Mobile App',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
+        title: 'HolyGrailMU',
         description: 'Web Design',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
+        title: 'SpendWise',
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
     },
 ]
 
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+// export const serviceData = [
+//     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
+//     { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
+//     { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
+//     { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+// ]
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'C#, Python, X++, SQL,  HTML, CSS, JavaScript' },

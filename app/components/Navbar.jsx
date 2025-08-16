@@ -39,8 +39,8 @@ const Navbar = () => {
         <ul className='hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 text-xl'>
           <li><a className='font-outfit' href="#top">Home</a></li>
           <li><a className='font-outfit' href="#about">About me</a></li>
-          <li><a className='font-outfit' href="#education">Education</a></li>
-          <li><a className='font-outfit' href="#work">My Work</a></li>
+          <li><a className='font-outfit' href="#experience">Experience</a></li>
+          <li><a className='font-outfit' href="#contact">Contact Me</a></li>
         </ul>
 
         <div className='flex items-center gap-4'>
@@ -60,8 +60,8 @@ const Navbar = () => {
 
           <li><a className='font-outfit' onClick={closeMenu} href="#top">Home</a></li>
           <li><a className='font-outfit' onClick={closeMenu} href="#about">About me</a></li>
-          <li><a className='font-outfit' onClick={closeMenu} href="#education">Education</a></li>
-          <li><a className='font-outfit' onClick={closeMenu} href="#work">My Work</a></li>
+          <li><a className='font-outfit' onClick={closeMenu} href="#experience">Experience</a></li>
+          <li><a className='font-outfit' onClick={closeMenu} href="#contact">Contact Me</a></li>
         </ul>
       </nav>
     </>

@@ -5,8 +5,8 @@ import { assets, infoList, toolsData } from '@/assests/assets';
 const About = () => {
   return (
     <div id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
-      <h3 className='text-center mb-2 text-xl font-ovo'>
-        Introduction</h3>
+      <h4 className='text-center mb-2 text-xl font-ovo'>
+        Introduction</h4>
       <h2 className='text-center text-5xl'>
         About Me</h2>
 
@@ -30,7 +30,7 @@ const About = () => {
                 ))}
             </ul>
 
-            <h4 className="my-6 text-gray-700 font-Ovo">Tools I use</h4>
+            <h4 className="my-6 text-gray-700 font-Ovo font-semibold">Tools I use</h4>
                 <ul className="flex items-center gap-2 sm:gap-5">
                     {toolsData.map((tool, index) => (
                     <li className='flex items-center justify-center w-12 sm:w-14 aspect-square cursor-pointer hover:-translate-y-1 duration-500'
