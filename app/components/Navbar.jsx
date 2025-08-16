@@ -40,6 +40,7 @@ const Navbar = () => {
           <li><a className='font-outfit' href="#top">Home</a></li>
           <li><a className='font-outfit' href="#about">About me</a></li>
           <li><a className='font-outfit' href="#experience">Experience</a></li>
+          <li><a className='font-outfit' href="#projects">Projects</a></li>
           <li><a className='font-outfit' href="#contact">Contact Me</a></li>
         </ul>
 
@@ -61,6 +62,7 @@ const Navbar = () => {
           <li><a className='font-outfit' onClick={closeMenu} href="#top">Home</a></li>
           <li><a className='font-outfit' onClick={closeMenu} href="#about">About me</a></li>
           <li><a className='font-outfit' onClick={closeMenu} href="#experience">Experience</a></li>
+          <li><a className='font-outfit' onClick={closeMenu} href="#projects">Projects</a></li>
           <li><a className='font-outfit' onClick={closeMenu} href="#contact">Contact Me</a></li>
         </ul>
       </nav>

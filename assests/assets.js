@@ -90,12 +90,12 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Developer Intern',
+        title: 'Portfolio',
         description: 'Web Design',
         bgImage: '/work-1.png',
     },
     {
-        title: 'HaraBuzz System',
+        title: 'HaraBuzz',
         description: 'Mobile App',
         bgImage: '/work-2.png',
     },
