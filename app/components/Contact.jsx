@@ -10,17 +10,17 @@ const Contact = () => {
     setShowPopup(true);
 
     const formData = new FormData(event.target);
-    formData.append("access_key", "4fd4110d-4740-48ea-afb2-ecd1ccbadeb4");
+    
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
+    const response = await fetch("/api/contact", {
+        method: "POST",
+        body: formData,
     });
 
     const data = await response.json();
 
     if (data.success) {
-      setResult("✔️ Form Submitted Successfully!");
+      setResult("✔️ Message Submitted Successfully!");
       event.target.reset();
     } else {
       console.log("Error", data);
