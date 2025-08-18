@@ -25,7 +25,7 @@ const Projects = () => {
                left-1/2 -translate-x-1/2 py-3 px-5 flex items-center 
                justify-between duration-500 group-hover:bottom-7'>
                     <div>
-                        <h2 className='font-semibold'>{project.title}</h2>
+                        <h2 className='font-semibold dark:text-black'>{project.title}</h2>
                         <p className='text-sm text-gray-700'>{project.description}</p>
                     </div>
                     <div className='border rounded-full border-black 

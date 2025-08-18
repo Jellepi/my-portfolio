@@ -18,10 +18,10 @@ const Experience = () => {
             <div key={index} 
             className="border border-gray-400 rounded-lg px-8 py-12
             hover:shadow-black hover:bg-lightHover 
-            hover: -translate-y-1 duration-500">
+            hover: -translate-y-1 duration-500 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
                 <Image src={icon} alt="icon" className="w-10" />
-                <h3 className="text-lg my-4 text-gray-700">{title}</h3>
-                <p className="text-sm text-gray-600 leading-5">{description}</p>
+                <h3 className="text-lg my-4 text-gray-700 dark:text-white">{title}</h3>
+                <p className="text-sm text-gray-600 leading-5 dark:text-white/80">{description}</p>
                 <a href={link} target="_blank" className="cursor-pointer flex items-center gap-2 text-sm mt-5">
                 View Certificate
                 <Image alt="" src={assets.right_arrow} className="w-4" />
