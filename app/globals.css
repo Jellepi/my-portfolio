@@ -18,8 +18,15 @@
   --shadow-black: 4px 4px 0 #000;
   --shadow-white: 4px 4px 0 #fff;
 
-  --color-darkTheme: #0C0C0C;
-  --color-darkHover: #2a004a;
+
+  /* --color-darkHover: #2a004a; */
+
+  --color-vividViolet: #ab00ff; 	
+	--color-darkHover: #8300c4; 	
+	--color-blueishViolet:#4c00a4;	
+	--color-darkViolet:#33007b;	
+	--color-darkTheme:#31004a;
+  --color-darkVioletBlack: #10032A;
   
 }
 
