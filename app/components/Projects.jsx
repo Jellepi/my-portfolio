@@ -29,36 +29,51 @@ const Projects = () => {
         >
             Here’s a collection of projects I’ve worked on that highlight my skills in backend development, problem-solving, and building practical solutions.
             </motion.p>
-    
-    <motion.div className='grid grid-cols-auto my-10 gap-6'
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1}}
-            transition={{delay:0.9, duration: 0.6 }}
+    <motion.div 
+    className="flex flex-wrap -m-4 my-10"
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ delay: 0.9, duration: 0.6 }}
     >
-        {workData.map((project, index)=>(
-            <motion.div key={index}
-             whileHover={{scale:1.05}}
-             transition={{duration:0.3}}  
-            className='aspect-square bg-no-repeat bg-cover bg-center 
-            rounded-lg relative cursor-pointer group'
-            style={{backgroundImage:`url(${project.bgImage})`}}>
-               <div className='bg-white w-10/12 rounded-md absolute bottom-5 
-               left-1/2 -translate-x-1/2 py-3 px-5 flex items-center 
-               justify-between duration-500 group-hover:bottom-7'>
-                    <div>
-                        <h2 className='font-semibold dark:text-black'>{project.title}</h2>
-                        <p className='text-sm text-gray-700'>{project.description}</p>
-                    </div>
-                    <div className='border rounded-full border-black 
-                    w-9 aspect-square flex items-center justify-center 
-                    shadow-[2px_2px_0_#000] group-hover:bg-purple-500 
-                    transition'>
-                        <Image src={assets.send_icon} alt='send icon' className='w-5'/>
-                    </div>
-                </div>
-            </motion.div>
-        ))}
+    {workData.map((project, index) => (
+        <motion.div 
+        key={index} 
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.3 }}
+        className="p-4 sm:w-1/2 lg:w-1/3"
+        >
+        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-md hover:bg-indigo-700 transition duration-300 ease-in">
+            
+            {/* Project image */}
+            <img 
+            src={project.bgImage} 
+            alt={project.title} 
+            className="lg:h-72 md:h-48 w-full object-cover object-center" 
+            />
+
+            {/* Card body */}
+            <div className="p-6 hover:text-white transition duration-300 ease-in">
+            <h2 className="text-base font-medium text-indigo-300 mb-1">
+                {project.date || "Project Date"}
+            </h2>
+            <h1 className="text-2xl font-semibold mb-3">
+                {project.title}
+            </h1>
+            <p className="leading-relaxed mb-3">
+                {project.description}
+            </p>
+
+            <div className="flex items-center flex-wrap">
+                <a href={project.link || "#"} className="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0">
+                Read More
+                </a>
+            </div>
+            </div>
+        </div>
+        </motion.div>
+    ))}
     </motion.div>
+
 
 {/*-- When adding new projects --*/}
 

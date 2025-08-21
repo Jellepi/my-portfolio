@@ -88,10 +88,11 @@ export const assets = {
 
 };
 
+
 export const workData = [
     {
         title: 'Portfolio',
-        description: 'Web Design',
+        description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
         bgImage: '/work-1.png',
     },
     {
