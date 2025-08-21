@@ -36,13 +36,19 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
           <Image src={isDarkMode ? assets.logo_dark: assets.logo} className='w-28 cursor-pointer mr-14' alt='logo'/>
         </a>
 
-        <ul className='hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 text-xl'>
-          <li><a className='font-outfit' href="#top">Home</a></li>
-          <li><a className='font-outfit' href="#about">About</a></li>
-          <li><a className='font-outfit' href="#experience">Experience</a></li>
-          <li><a className='font-outfit' href="#projects">Projects</a></li>
-          <li><a className='font-outfit' href="#contact">Contact</a></li>
+        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 text-xl">
+          {["Home", "About", "Experience", "Projects", "Contact"].map((item, i) => (
+            <li key={i}>
+              <a 
+                href={`#${item.toLowerCase()}`} 
+                className="relative font-outfit after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+              >
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
+
 
         <div className='flex items-center gap-4'>
           <button onClick={()=>setIsDarkMode(prev => !prev)}>
