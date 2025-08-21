@@ -42,7 +42,7 @@ const Projects = () => {
         transition={{ duration: 0.3 }}
         className="p-4 sm:w-1/2 lg:w-1/3"
         >
-        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-md hover:bg-indigo-700 transition duration-300 ease-in">
+        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:shadow-black hover:bg-lightHover transition  duration-300 ease-in">
             
             {/* Project image */}
             <img 
@@ -52,9 +52,9 @@ const Projects = () => {
             />
 
             {/* Card body */}
-            <div className="p-6 hover:text-white transition duration-300 ease-in">
+            <div className="p-6  transition duration-300 ease-in">
             <h2 className="text-base font-medium text-indigo-300 mb-1">
-                {project.date || "Project Date"}
+                {project.tool || "Tools"}
             </h2>
             <h1 className="text-2xl font-semibold mb-3">
                 {project.title}

@@ -91,21 +91,25 @@ export const assets = {
 
 export const workData = [
     {
+        tool:'React | Tailwind CSS | Next.js',
         title: 'Portfolio',
         description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
         bgImage: '/work-1.png',
     },
     {
+        tool:'Python | Flask | HTML | Javascript | CSS',
         title: 'HaraBuzz',
         description: 'Mobile App',
         bgImage: '/work-2.png',
     },
     {
+        tool:'C# | REST API',
         title: 'HolyGrailMU',
         description: 'Web Design',
         bgImage: '/work-3.png',
     },
     {
+        tool:'C# ',
         title: 'SpendWise',
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
