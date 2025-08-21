@@ -42,7 +42,7 @@ const Projects = () => {
         transition={{ duration: 0.3 }}
         className="p-4 sm:w-1/2 lg:w-1/3"
         >
-        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:shadow-black hover:bg-lightHover transition  duration-300 ease-in">
+        <div className="h-full border-1 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-md hover:bg-lightHover transition  duration-300 ease-in">
             
             {/* Project image */}
             <img 
