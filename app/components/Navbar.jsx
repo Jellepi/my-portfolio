@@ -61,18 +61,31 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
         {/*-- Mobile Menu --*/}
 
-        <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 
-        z-50 h-screen bg-irides4 transition duration-500 text-xl dark:bg-darkVioletBlack dark:text-white'>
-          <div className='absolute right-6 top-6' onClick={closeMenu} >
-            <Image src={isDarkMode? assets.close_white:assets.close_black} alt='' className='w-5 cursor-pointer'/>
+        <ul 
+          ref={sideMenuRef} 
+          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 
+                    z-50 h-screen bg-irides4 transition duration-500 text-xl 
+                    dark:bg-darkVioletBlack dark:text-white"
+        >
+          <div className="absolute right-6 top-6" onClick={closeMenu}>
+            <Image src={isDarkMode ? assets.close_white : assets.close_black} alt="" className="w-5 cursor-pointer"/>
           </div>
 
-          <li><a className='font-outfit' onClick={closeMenu} href="#top">Home</a></li>
-          <li><a className='font-outfit' onClick={closeMenu} href="#about">About me</a></li>
-          <li><a className='font-outfit' onClick={closeMenu} href="#experience">Experience</a></li>
-          <li><a className='font-outfit' onClick={closeMenu} href="#projects">Projects</a></li>
-          <li><a className='font-outfit' onClick={closeMenu} href="#contact">Contact Me</a></li>
+          {["Home","About","Experience","Projects","Contact"].map((item, i) => (
+            <li key={i}>
+              <a 
+                href={`#${item.toLowerCase().replace(" ", "")}`} 
+                onClick={closeMenu}
+                className="relative font-outfit after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 
+                          after:h-[2px] after:bg-black dark:after:bg-white after:transition-all after:duration-300 
+                          hover:after:w-full"
+              >
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
+
       </nav>
     </>
   )
