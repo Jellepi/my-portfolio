@@ -56,9 +56,9 @@ const Contact = () => {
       whileInView={{opacity: 1}}
       transition={{duration: 0.5,delay: 0.7}}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        nobis molestias et tempore assumenda dolorem vel 
-        porro quidem maxime voluptate.
+        I’d love to connect! Whether it’s about opportunities, 
+        collaborations, or just sharing ideas, 
+        feel free to reach out and I’ll get back to you as soon as I can.
       </motion.p>
 
       <motion.form className='max-w-2xl mx-auto' onSubmit={onSubmit}

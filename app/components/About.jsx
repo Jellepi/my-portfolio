@@ -46,8 +46,9 @@ const About = ({isDarkMode}) => {
             className='flex-1'>
                 <p
                 className='mb-10 max-w-2xl'
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis a quas recusandae? Debitis fuga, error provident placeat odi
-                    o voluptatum blanditiis, vel necessitatibus mollitia impedit quis. Tempora nisi consequatur quae saepe!</p>
+                >Hi! I'm Jella Pintor, a passionate and dedicated software developer aiming to break into backend development.
+                 I hold a Bachelor’s degree in Computer Science from the Polytechnic University of the Philippines 
+                 and have hands-on experience in building and enhancing ERP systems, as well as working with various tools and technologies. I’m continuously expanding my skills to stay updated in the ever-evolving tech landscape </p>
             <motion.ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'
             initial={{ opacity: 0}}
             whileInView={{ opacity: 1}}

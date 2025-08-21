@@ -27,10 +27,8 @@ const Projects = () => {
         whileInView={{opacity: 1}}
         transition={{duration: 0.5,delay: 0.7}}
         >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Inventore deleniti atque at eos voluptatem ipsum, esse, laborum 
-            repellat asperiores, nobis molestias et tempore assumenda dolorem vel 
-            porro quidem maxime voluptate.</motion.p>
+            Here’s a collection of projects I’ve worked on that highlight my skills in backend development, problem-solving, and building practical solutions.
+            </motion.p>
     
     <motion.div className='grid grid-cols-auto my-10 gap-6'
             initial={{ opacity: 0 }}
