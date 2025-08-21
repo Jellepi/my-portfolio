@@ -39,23 +39,41 @@ const Hero = () => {
 
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-                <motion.a href="#contact"
-                initial={{y:30, opacity: 0}}
-                whileInView={{y: 0, opacity: 1}}
-                transition={{duration: 0.6,delay: 1}}
+                <motion.a 
+                    href="#contact"
+                    initial={{y:30, opacity: 0}}
+                    whileInView={{y: 0, opacity: 1}}
+                    transition={{duration: 0.6, delay: 1}}
+                    className="group flex items-center gap-2 relative inline-block focus:ring-3 focus:outline-hidden"
+                    >
+                    <span
+                        className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-violet-400 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
+                    ></span>
 
-                className="px-10 py-3 border border-white rounded-full bg-black text-white 
-                flex items-center gap-2 dark:bg-transparent"
-                >Contact me <Image src={assets.right_arrow_white} alt="" className="w-4"/>
+                    <span
+                        className="relative inline-flex items-center gap-2 border-2 border-current px-6.5 py-3 text-sm tracking-widest text-black uppercase dark:text-white"
+                    >
+                        Contact me 
+                        
+                    </span>
                 </motion.a>
+
 
                 <motion.a href="/assests/public/PintorCV.pdf" download 
                 initial={{y:30, opacity: 0}}
                 whileInView={{y: 0, opacity: 1}}
                 transition={{duration: 0.6,delay: 1}}
-                className="px-10 py-3 border rounded-full border-gray-500 
-                flex items-center gap-2 bg-white dark:text-black">
+                className="group flex items-center gap-2 relative inline-block focus:ring-3 focus:outline-hidden"
+                    >
+                    <span
+                        className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-vividViolet transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
+                    ></span>
+
+                    <span
+                        className="relative inline-flex items-center gap-2 border-2 border-current px-5 py-3 text-sm tracking-widest text-black uppercase dark:text-white"
+                    >
                     My Resume <Image src={assets.download_icon} alt="" className="w-4"/>
+                    </span>
                 </motion.a>
             </div>
         </div>
