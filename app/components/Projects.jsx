@@ -30,7 +30,7 @@ const Projects = () => {
             Here’s a collection of projects I’ve worked on that highlight my skills in backend development, problem-solving, and building practical solutions.
             </motion.p>
     <motion.div 
-    className="flex flex-wrap -m-4 my-10"
+    className="flex flex-wrap -m-4 my-10 z-10"
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ delay: 0.9, duration: 0.6 }}
@@ -40,9 +40,9 @@ const Projects = () => {
         key={index} 
         whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.3 }}
-        className="p-4 sm:w-1/2 lg:w-1/3"
+        className="p-4 sm:w-1/2 lg:w-1/3 z-10"
         >
-        <div className="h-full border-1 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-md dark:hover:bg-darkHover/50 transition  duration-300 ease-in">
+        <div className="h-full border-1 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-md dark:hover:bg-darkHover/50 transition z-10 duration-300 ease-in">
             
             {/* Project image */}
             <img 
@@ -53,7 +53,7 @@ const Projects = () => {
 
             {/* Card body */}
             <div className="p-6  transition duration-300 ease-in">
-            <h2 className="text-base font-medium text-indigo-300 mb-1">
+            <h2 className="text-base font-medium text-violet-600 dark:text-purple-200 mb-1">
                 {project.tool || "Tools"}
             </h2>
             <h1 className="text-2xl font-semibold mb-3">

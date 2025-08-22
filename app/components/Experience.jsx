@@ -10,7 +10,7 @@ const Experience = () => {
     whileInView={{ opacity: 1 }}
     transition={{duration: 1}}
     
-    id='experience' className='h-screen w-full px-[12%] py-10 scroll-mt-20'>
+    id='experience' className='w-full px-[12%] py-10 scroll-mt-20'>
         <motion.h4 className='text-center mb-2 text-xl font-ovo'
         initial={{y: -20, opacity: 0}}
         whileInView={{y: 0, opacity: 1}}
