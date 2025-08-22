@@ -42,7 +42,7 @@ const Projects = () => {
         transition={{ duration: 0.3 }}
         className="p-4 sm:w-1/2 lg:w-1/3"
         >
-        <div className="h-full border-1 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-md hover:bg-lightHover transition  duration-300 ease-in">
+        <div className="h-full border-1 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-md dark:hover:bg-darkHover/50 transition  duration-300 ease-in">
             
             {/* Project image */}
             <img 
@@ -64,7 +64,7 @@ const Projects = () => {
             </p>
 
             <div className="flex items-center flex-wrap">
-                <a href={project.link || "#"} className="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0">
+                <a href={project.link || "#"} className="text-blue-400 inline-flex items-center md:mb-2 lg:mb-0">
                 Read More
                 </a>
             </div>

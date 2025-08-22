@@ -26,8 +26,8 @@ const Experience = () => {
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
             transition={{duration: 0.5,delay: 0.7}}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Inventore deleniti atque at eos voluptatem ipsum, </motion.p>
+           Throughout my journey, I’ve gained hands-on experience working on diverse projects that strengthened my skills in software development. Someday I'd have different roles to show here but for now,
+            here are some of the key experiences that would start my career path. </motion.p>
 
         <motion.div className='grid grid-cols-auto gap-2 my-5'
             initial={{ opacity: 0 }}

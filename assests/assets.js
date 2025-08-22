@@ -117,7 +117,8 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Developer Intern', description: 'A microsfot dynamics 365 position', link: 'https://drive.google.com/file/d/1g4QttsmNlsrKHSMoM_XPVyAkXN8tWitb/view?usp=sharing' },
+    { icon: assets.web_icon, title: 'Developer Intern', description: 'At Creative Dynamix Inc, I supported in building and improving ERP systems in Microsft Dynamics 365 under the Finance and Operations module. I gained hands-on experience in coding, problem-solving, and collaborating with a team.', 
+        link: 'https://drive.google.com/file/d/1g4QttsmNlsrKHSMoM_XPVyAkXN8tWitb/view?usp=sharing' },
     // { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
     // { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
     // { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
