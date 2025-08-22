@@ -92,12 +92,27 @@ const Contact = () => {
         rows={6} placeholder='Enter your message' required
           className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6
           dark:bg-darkHover/30 dark:border-white/90' name='message'></motion.textarea>
-        <motion.button type='submit'
-         whileHover={{scale: 1.05}}
-         transition={{duration: 0.3}}
+         <div className='flex justify-center w-full'>
+         <motion.button
+              type="submit"
+              initial={{y:30, opacity: 0}}
+              whileInView={{y: 0, opacity: 1}}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.8 }}
+              className="group relative inline-block focus:outline-hidden focus:ring-3"
+            >
+              <span
+                className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-violet-400 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
+              ></span>
 
-          className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full
-          mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'>Submit Now</motion.button>
+              <span
+                className="relative inline-flex items-center gap-2 border-2 border-current px-6.5 py-3 text-sm tracking-widest text-black uppercase dark:text-white"
+              >
+                Submit Now
+              </span>
+        </motion.button>
+        </div>
+
       </motion.form>
 
       {/* Popup Notification */}
@@ -111,3 +126,4 @@ const Contact = () => {
 }
 
 export default Contact
+
