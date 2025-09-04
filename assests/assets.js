@@ -6,10 +6,7 @@ import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
-import firebase from './firebase.png';
-import figma from './figma.png';
 import git from './git.png';
-import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -28,9 +25,6 @@ import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
 import web_icon from './web-icon.png';
-import mobile_icon from './mobile-icon.png';
-import ui_icon from './ui-icon.png';
-import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
@@ -56,10 +50,7 @@ export const assets = {
     project_icon,
     project_icon_dark,
     vscode,
-    firebase,
-    figma,
     git,
-    mongodb,
     right_arrow_white,
     logo,
     logo_dark,
@@ -78,9 +69,6 @@ export const assets = {
     close_black,
     close_white,
     web_icon,
-    mobile_icon,
-    ui_icon,
-    graphics_icon,
     right_arrow,
     send_icon,
     right_arrow_bold,
@@ -117,7 +105,7 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Developer Intern', description: 'At Creative Dynamix Inc, I supported in building and improving ERP systems in Microsft Dynamics 365 under the Finance and Operations module. I gained hands-on experience in coding, problem-solving, and collaborating with a team.', 
+    { icon: assets.web_icon, title: 'Software Developer Intern', description: 'At Creative Dynamix Inc, I supported in building and improving ERP systems in Microsft Dynamics 365 under the Finance and Operations module. I gained hands-on experience in coding, problem-solving, and collaborating with a team.', 
         link: 'https://drive.google.com/file/d/1g4QttsmNlsrKHSMoM_XPVyAkXN8tWitb/view?usp=sharing' },
     // { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
     // { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
