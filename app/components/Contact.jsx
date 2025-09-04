@@ -41,9 +41,10 @@ const Contact = () => {
     id='contact'   className='relative w-full px-[12%] py-10 scroll-mt-20 z-10'
 >
   {/* Blobs in background */}
-  <div className="absolute -top-10 -left-20 w-72 h-72 bg-purple-400 rounded-full mix-blend-screen filter blur-3xl opacity-70 animate-blob dark:shadow-[0_0_60px_30px_rgba(168,85,247,0.4)] z-0"></div>
-  <div className="absolute -bottom-16 right-10 w-64 h-64 bg-pink-400 rounded-full mix-blend-screen filter blur-3xl opacity-70 animate-blob animation-delay-2000 dark:shadow-[0_0_60px_30px_rgba(236,72,153,0.4)] z-0"></div>
-
+  <div className='absolute inset-0 -z-10'>
+    <div className="absolute -top-10 -left-20 w-72 h-72 bg-purple-400 rounded-full mix-blend-screen filter blur-3xl opacity-70 animate-blob dark:shadow-[0_0_60px_30px_rgba(168,85,247,0.4)]"></div>
+    <div className="absolute -bottom-16 right-10 w-64 h-64 bg-pink-400 rounded-full mix-blend-screen filter blur-3xl opacity-70 animate-blob animation-delay-2000 dark:shadow-[0_0_60px_30px_rgba(236,72,153,0.4)]"></div>
+  </div>
       <motion.h4 className='text-center mb-2 text-xl font-ovo z-10'
       initial={{y: -20, opacity: 0}}
       whileInView={{y: 0, opacity: 1}}

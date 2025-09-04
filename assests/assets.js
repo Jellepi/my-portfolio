@@ -34,9 +34,13 @@ import dynamics from './dynamics.png';
 import visualstudio from './visualstudio.png'
 import postgre from './postgre.png'
 import python from './python.png'
+import github from './github.png'
+import github_light from './github-light.png'
 
 
 export const assets = {
+    github,
+    github_light,
     csharp,
     dynamics,
     visualstudio,
@@ -76,33 +80,57 @@ export const assets = {
 
 };
 
-
 export const workData = [
-    {
-        tool:'React | Tailwind CSS | Next.js',
-        title: 'Portfolio',
-        description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
-        bgImage: '/work-1.png',
-    },
-    {
-        tool:'Python | Flask | HTML | Javascript | CSS',
-        title: 'HaraBuzz',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        tool:'C# | REST API',
-        title: 'HolyGrailMU',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        tool:'C# ',
-        title: 'SpendWise',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
-]
+  {
+    tool: 'React | Tailwind CSS | Next.js',
+    title: 'Portfolio',
+    description:
+      'A React + Next.js + Tailwind CSS portfolio showcasing projects and skills. Features a modern, responsive UI and dark mode support, serving as a central hub for personal branding and development work.',
+    bgImage: '/work-1.png',
+    link: '',
+    githubLink: 'https://github.com/yourusername/portfolio',
+    isPrivate: false,
+  },
+  {
+    tool: 'Python | Flask | HTML | Javascript | CSS',
+    title: 'HaraBuzz',
+    description: 'An AI-powered UAV system that detects Onion Armyworm infestations using UNet++ for segmentation and YOLOv8 for classification, built as a thesis project to help farmers monitor crops more accurately.',
+    bgImage: '/work-2.png',
+    link: '',
+    githubLink: '#',
+    isPrivate: true,
+  },
+  {
+    tool: 'C# | ASP.NET | Entity Framework | MVC | SQL Server Management',
+    title: 'Lock & Ledger',
+    description: 'A simple ASP.NET Core MVC Entity Framework web application for personal finance tracking.',
+    bgImage: '/work-4.png',
+    link: '',
+    githubLink: 'https://github.com/Jellepi/LockAndLedger',
+    isPrivate: false,
+  },
+  {
+    tool: 'C# | ASP.NET | Entity Framework | Web API | SQL Server Management',
+    title: 'FateMakeupAPI',
+    description: 'A RESTful API for managing makeup product data, with full CRUD functionality.',
+    bgImage: '/work-3.png',
+    link: '',
+    githubLink: 'https://github.com/Jellepi/FateMakeupApi',
+    isPrivate: false,
+  },
+   {
+    tool: 'C# | WPF',
+    title: 'SpendWise',
+    description: 'A desktop app with login/logout, income & expense tracking, built to explore OOP concepts.',
+    bgImage: '/work-5.png',
+    link: '#', // if you want to demo exe later
+    githubLink: '#',
+    isPrivate: false,
+    hasDetails: true,
+    extraImages: ['/work-1a.png', '/work-1b.png'],
+  }
+];
+
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Software Developer Intern', description: 'At Creative Dynamix Inc, I supported in building and improving ERP systems in Microsft Dynamics 365 under the Finance and Operations module. I gained hands-on experience in coding, problem-solving, and collaborating with a team.', 

@@ -32,7 +32,7 @@ const Hero = () => {
              whileInView={{y: 0, opacity: 1}}
              transition={{duration: 1.0,delay: 0.5}}
              className="text-3xl sm:text-6xl lg-text-[66px] z-10">
-                <span className='text-violet-600 dark:text-purple-200 relative z-1'>backend developer </span>based in the Philippines.
+                <span className='text-violet-600 dark:text-purple-300 relative z-1'>backend developer </span>based in the Philippines.
             </motion.h1>
 
             <motion.p className="max-w-2xl mx:auto relative z-10"
