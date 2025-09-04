@@ -7,12 +7,11 @@ const Hero = () => {
    return(
     
         <div id='home' className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-        <div className="absolute inset-0 z-0">
-        <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-screen filter blur-3xl opacity-80 animate-blob dark:shadow-[0_0_60px_30px_rgba(168,85,247,0.6)]"></div>
-        <div className="absolute top-0 -right-4 w-72 h-72 bg-green-300 rounded-full mix-blend-screen filter blur-3xl opacity-80 animate-blob animation-delay-2000 dark:shadow-[0_0_60px_30px_rgba(34,197,94,0.6)]"></div>
-        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-400 rounded-full mix-blend-screen filter blur-3xl opacity-80 animate-blob animation-delay-4000 dark:shadow-[0_0_60px_30px_rgba(236,72,153,0.6)]"></div>
+            <div className="absolute inset-0 -z-10 overflow-hidden">
+            <div className="absolute top-[10%] left-0 w-80 h-80 bg-purple-400 rounded-full mix-blend-screen blur-3xl opacity-80 animate-blob"></div>
+            <div className="absolute top-[20%] right-0 w-80 h-80 bg-green-300 rounded-full mix-blend-screen blur-3xl opacity-80 animate-blob animation-delay-2000"></div>
+            <div className="absolute bottom-[15%] left-[15%] w-80 h-80 bg-pink-400 rounded-full mix-blend-screen blur-3xl opacity-80 animate-blob animation-delay-4000"></div>
         </div>
-
             <motion.div
             initial={{ scale:0 }}
             whileInView={{ scale: 1 }}
@@ -26,14 +25,14 @@ const Hero = () => {
              whileInView={{y: 0, opacity: 1}}
              transition={{duration: 0.6,delay: 0.3}}
 
-             className="flex items-end gap-2 text-xl md:text-3xl mb-3 font-Ovo relative z-10 ">
+             className="flex items-end gap-2 text-xl md:text-3xl mb-3 font-Ovo relative z-10">
                 Hi! I'm Jella Pintor! <Image src={assets.hand_icon} alt="" className="w-6"/> </motion.h2>
             <motion.h1 
              initial={{y: -30, opacity: 0}}
              whileInView={{y: 0, opacity: 1}}
              transition={{duration: 1.0,delay: 0.5}}
-             className="text-3xl sm:text-6xl lg-text-[66px]">
-                <span className='text-violet-600 dark:text-purple-200 relative z-10'>backend developer </span>based in the Philippines.
+             className="text-3xl sm:text-6xl lg-text-[66px] z-10">
+                <span className='text-violet-600 dark:text-purple-200 relative z-1'>backend developer </span>based in the Philippines.
             </motion.h1>
 
             <motion.p className="max-w-2xl mx:auto relative z-10"

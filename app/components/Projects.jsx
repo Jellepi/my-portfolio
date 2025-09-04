@@ -40,7 +40,7 @@ const Projects = () => {
         key={index} 
         whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.3 }}
-        className="p-4 sm:w-1/2 lg:w-1/3 z-10"
+        className="p-4 sm:w-1/2 lg:w-1/3 z-1"
         >
         <div className="h-full border-1 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-md dark:hover:bg-darkHover/50 transition z-10 duration-300 ease-in">
             

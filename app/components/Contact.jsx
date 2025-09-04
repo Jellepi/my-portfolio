@@ -42,7 +42,6 @@ const Contact = () => {
 >
   {/* Blobs in background */}
   <div className="absolute -top-10 -left-20 w-72 h-72 bg-purple-400 rounded-full mix-blend-screen filter blur-3xl opacity-70 animate-blob dark:shadow-[0_0_60px_30px_rgba(168,85,247,0.4)] z-0"></div>
-
   <div className="absolute -bottom-16 right-10 w-64 h-64 bg-pink-400 rounded-full mix-blend-screen filter blur-3xl opacity-70 animate-blob animation-delay-2000 dark:shadow-[0_0_60px_30px_rgba(236,72,153,0.4)] z-0"></div>
 
       <motion.h4 className='text-center mb-2 text-xl font-ovo z-10'
