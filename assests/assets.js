@@ -107,6 +107,8 @@ export const workData = [
         '/Harabuzz/image4.png',
         '/Harabuzz/image5.png',
         ],
+    longDescription:'',
+    paperLink: 'https://drive.google.com/file/d/15TSrIYizAX5ts_lI2bzfV_bc64PvOE_k/view?usp=sharing',
   },
   {
     tool: 'C# | ASP.NET | Entity Framework | MVC | SQL Server Management',

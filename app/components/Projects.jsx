@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 const Projects = ({ isDarkMode }) => {
   const [selectedProject, setSelectedProject] = useState(null);
-  const [fullscreenImg, setFullscreenImg] = useState(null); // ✅ declare state
+  const [fullscreenImg, setFullscreenImg] = useState(null); 
 
   return (
     <motion.div id="projects" className="w-full px-[12%] py-10 scroll-mt-20"
@@ -13,8 +13,6 @@ const Projects = ({ isDarkMode }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      {/* ... your portfolio header code here ... */}
-
       {/* Project Cards */}
       <motion.div 
         className="flex flex-wrap -m-4 my-10 z-10"
@@ -53,7 +51,7 @@ const Projects = ({ isDarkMode }) => {
                   {project.hasDetails && (
                     <button
                       onClick={() => setSelectedProject(project)}
-                      className="text-blue-400 inline-flex items-center"
+                      className="text-blue-400 inline-flex items-center cursor-pointer"
                     >
                       Read More
                     </button>
@@ -85,18 +83,27 @@ const Projects = ({ isDarkMode }) => {
 
       {/* Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-          <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6 max-w-2xl w-full relative">
+        <div className="fixed inset-0 bg-darkVioletBlack bg-opacity-70 flex items-center justify-center z-50">
+          <div className="bg-white dark:bg-violet-950 rounded-xl shadow-lg p-6 max-w-2xl w-full relative">
             <button
               onClick={() => setSelectedProject(null)}
-              className="absolute top-3 right-3 text-gray-600 dark:text-gray-300 text-2xl"
+              className="absolute top-3 right-3 text-gray-600 dark:text-gray-300 text-2xl cursor-pointer"
             >
               ✕
             </button>
 
             <h2 className="text-2xl font-bold mb-3">{selectedProject.title}</h2>
             <p className="mb-5">{selectedProject.longDescription || selectedProject.description}</p>
-
+            {selectedProject.paperLink && (
+                <a 
+                    href={selectedProject.paperLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-blue-400 font-bold py-5 block"
+                >
+                    📄 View Thesis Paper
+                </a>
+                )}
             {selectedProject.extraImages && (
               <div className="grid grid-cols-2 gap-4">
                 {selectedProject.extraImages.map((img, i) => (
@@ -116,10 +123,10 @@ const Projects = ({ isDarkMode }) => {
 
       {/* Fullscreen Image */}
       {fullscreenImg && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[60]">
+        <div className="fixed inset-0 bg-darkVioletBlack bg-opacity-90 flex items-center justify-center z-[60]">
           <button
             onClick={() => setFullscreenImg(null)}
-            className="absolute top-5 right-5 text-white text-3xl"
+            className="absolute top-5 right-5 text-white text-3xl cursor-pointer"
           >
             ✕
           </button>
