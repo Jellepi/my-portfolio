@@ -95,10 +95,18 @@ export const workData = [
     tool: 'Python | Flask | HTML | Javascript | CSS',
     title: 'HaraBuzz',
     description: 'An AI-powered UAV system that detects Onion Armyworm infestations using UNet++ for segmentation and YOLOv8 for classification, built as a thesis project to help farmers monitor crops more accurately.',
-    bgImage: '/work-2.png',
-    link: '',
+    bgImage: '/Harabuzz/image1.png',
+    link: '#',
     githubLink: '#',
     isPrivate: true,
+    hasDetails: true,
+    extraImages: [
+        '/Harabuzz/image1.png',
+        '/Harabuzz/image2.png',
+        '/Harabuzz/image3.png',
+        '/Harabuzz/image4.png',
+        '/Harabuzz/image5.png',
+        ],
   },
   {
     tool: 'C# | ASP.NET | Entity Framework | MVC | SQL Server Management',
@@ -122,12 +130,17 @@ export const workData = [
     tool: 'C# | WPF',
     title: 'SpendWise',
     description: 'A desktop app with login/logout, income & expense tracking, built to explore OOP concepts.',
-    bgImage: '/work-5.png',
-    link: '#', // if you want to demo exe later
+    bgImage: 'SpendWise/SW_dashboard.jpg',
+    link: '#', 
     githubLink: '#',
-    isPrivate: false,
+    isPrivate: true,
     hasDetails: true,
-    extraImages: ['/work-1a.png', '/work-1b.png'],
+    extraImages: [
+        '/SpendWise/SW_login.jpg',
+        '/SpendWise/SW_dashboard.jpg',
+        '/SpendWise/SW_expense.jpg',
+        '/SpendWise/SW_income.jpg',
+        ],
   }
 ];
 

@@ -32,7 +32,7 @@ const Hero = () => {
              whileInView={{y: 0, opacity: 1}}
              transition={{duration: 1.0,delay: 0.5}}
              className="text-3xl sm:text-6xl lg-text-[66px] z-10">
-                <span className='text-violet-600 dark:text-purple-300 relative z-1'>backend developer </span>based in the Philippines.
+                <span className='text-violet-600 dark:text-green-300 relative z-1'>backend developer </span>based in the Philippines.
             </motion.h1>
 
             <motion.p className="max-w-2xl mx:auto relative z-10"
@@ -53,7 +53,7 @@ const Hero = () => {
                     className="group flex items-center gap-2 relative inline-block focus:ring-3 focus:outline-hidden"
                     >
                     <span
-                        className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-violet-400 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
+                        className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-violet-300 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
                     ></span>
 
                     <span
@@ -72,7 +72,7 @@ const Hero = () => {
                 className="group flex items-center gap-2 relative inline-block focus:ring-3 focus:outline-hidden"
                     >
                     <span
-                        className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-vividViolet transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
+                        className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-green-300 transition-transform group-hover:translate-x-0 group-hover:translate-y-0 dark:bg-green-300"
                     ></span>
 
                     <span
