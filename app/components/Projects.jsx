@@ -13,6 +13,33 @@ const Projects = ({ isDarkMode }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
+            {/* Heading */}
+      <motion.h4 
+        className='text-center mb-2 text-xl font-ovo'
+        initial={{y: -20, opacity: 0}}
+        whileInView={{y: 0, opacity: 1}}
+        transition={{duration: 0.5,delay: 0.3}}
+      >
+        My Portfolio
+      </motion.h4>
+
+      <motion.h2 
+        className='text-center text-5xl'
+        initial={{y: -20, opacity: 0}}
+        whileInView={{y: 0, opacity: 1}}
+        transition={{duration: 0.5,delay: 0.5}}
+      >
+        My Latest Works
+      </motion.h2>
+
+      <motion.p 
+        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{duration: 0.5,delay: 0.7}}
+      >
+        Here’s a collection of projects I’ve worked on that highlight my skills in backend development, problem-solving, and building practical solutions.
+      </motion.p>
       {/* Project Cards */}
       <motion.div 
         className="flex flex-wrap -m-4 my-10 z-10"
