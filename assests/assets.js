@@ -88,7 +88,7 @@ export const workData = [
       'A React + Next.js + Tailwind CSS portfolio showcasing projects and skills. Features a modern, responsive UI and dark mode support, serving as a central hub for personal branding and development work.',
     bgImage: '/my-portfolio/portfolio.jpg',
     link: '',
-    githubLink: 'https://github.com/yourusername/portfolio',
+    githubLink: 'https://github.com/Jellepi/my-portfolio',
     isPrivate: false,
   },
   {
@@ -106,7 +106,7 @@ export const workData = [
         '/my-portfolio/images/Harabuzz/image3.png',
         '/my-portfolio/images/Harabuzz/image4.png',
         '/my-portfolio/images/Harabuzz/image5.png',
-        '/my-portfolio/images/Harabuzz/images6.jpg',
+        '/my-portfolio/images/Harabuzz/image6.jpg',
         ],
     longDescription:'',
     paperLink: 'https://drive.google.com/file/d/15TSrIYizAX5ts_lI2bzfV_bc64PvOE_k/view?usp=sharing',
@@ -142,7 +142,7 @@ export const workData = [
         '/my-portfolio/images/SpendWise/SW_login.jpg',
         '/my-portfolio/images/SpendWise/SW_dashboard.jpg',
         '/my-portfolio/images/SpendWise/SW_expense.jpg',
-        'my-portfolio/images/SpendWise/SW_income.jpg',
+        '/my-portfolio/images/SpendWise/SW_income.jpg',
         ],
   }
 ];
