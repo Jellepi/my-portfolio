@@ -1,8 +1,11 @@
 {
   "name": "jella-portfolio",
+  "homepage": "https://Jellepi.github.io/my-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -21,6 +24,7 @@
     "@types/react": "19.1.9",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4"
   }
 }
