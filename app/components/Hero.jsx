@@ -40,7 +40,7 @@ const Hero = () => {
             whileInView={{opacity: 1}}
             transition={{duration: 0.6,delay: 0.7}}
 >
-            I’m an aspiring backend developer from the Philippines with a strong passion for learning and exploring new technologies. I just love bashing my head through my keyboard until solutions eventually form.
+            I’m an aspiring software developer from the Philippines with a strong passion for learning and exploring new technologies. I just love bashing my head through my keyboard until solutions eventually form.
             </motion.p>
 
 
